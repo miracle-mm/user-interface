@@ -1,0 +1,10 @@
+.hover (@fromColor, @toColor){
+	animation-name: colorAnim;
+	animation-duration: 2s;
+	// font-weight: bold;
+
+	@keyframes colorAnim {
+		from {background-color: @fromColor;}
+		to {background-color: @toColor;}
+	}
+}
