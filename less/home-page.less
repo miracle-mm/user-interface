@@ -2,16 +2,21 @@ section {
     margin: 10px auto;
     article {
         display: flex;
-
+        margin-bottom: 20px;
         .imgWrapper {
-            width: 25%;
             flex-grow: 1;
+            flex-basis: 25%;
+            padding: 10px;
             img {
-                width: 100%;
             }
         }
         .textWrapper {
             flex-grow: 3;
+            flex-basis: 0;
+            padding: 10px;
+            a {
+                .button-mixin(black, 2rem, black, 10px, white);
+            }
         }
     }
 }

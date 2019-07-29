@@ -8,3 +8,13 @@
 		to {background-color: @toColor;}
 	}
 }
+
+.button-mixin (@fontColor, @fontSize, @borderColor, @borderRadius, @backgroundColor){
+	color: @fontColor;
+	font-size: @fontSize;
+	border: 1px solid @borderColor;
+	border-radius: @borderRadius;
+    background-color: @backgroundColor;
+	padding: 10px 40px;
+    text-decoration: none;
+}
