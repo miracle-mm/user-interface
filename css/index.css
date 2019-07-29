@@ -243,3 +243,11 @@ section article .textWrapper a:hover {
 section article .textWrapper p {
   text-align: left;
 }
+section article .bioWrapper {
+  flex-grow: 3;
+  flex-basis: 60%;
+}
+section article .imgWrapper2 {
+  flex-grow: 1;
+  flex-basis: 40%;
+}
