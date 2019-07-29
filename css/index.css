@@ -184,3 +184,19 @@ header nav a:hover {
     background-color: hotpink;
   }
 }
+section {
+  margin: 10px auto;
+}
+section article {
+  display: flex;
+}
+section article .imgWrapper {
+  width: 25%;
+  flex-grow: 1;
+}
+section article .imgWrapper img {
+  width: 100%;
+}
+section article .textWrapper {
+  flex-grow: 3;
+}
