@@ -8,14 +8,23 @@ section {
             flex-basis: 25%;
             padding: 10px;
             img {
+                border-radius: 10px;
             }
         }
         .textWrapper {
             flex-grow: 3;
             flex-basis: 0;
             padding: 10px;
+            text-align: center;
+            h1 {
+                text-align: center;
+            }
             a {
+                margin: 0 auto;
                 .button-mixin(black, 2rem, black, 10px, white);
+            }
+            p {
+                text-align: left;
             }
         }
     }

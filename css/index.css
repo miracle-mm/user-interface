@@ -192,7 +192,7 @@ footer {
   align-items: center;
 }
 footer h3 {
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 section {
   margin: 10px auto;
@@ -206,12 +206,20 @@ section article .imgWrapper {
   flex-basis: 25%;
   padding: 10px;
 }
+section article .imgWrapper img {
+  border-radius: 10px;
+}
 section article .textWrapper {
   flex-grow: 3;
   flex-basis: 0;
   padding: 10px;
+  text-align: center;
+}
+section article .textWrapper h1 {
+  text-align: center;
 }
 section article .textWrapper a {
+  margin: 0 auto;
   color: black;
   font-size: 2rem;
   border: 1px solid black;
@@ -219,4 +227,7 @@ section article .textWrapper a {
   background-color: white;
   padding: 10px 40px;
   text-decoration: none;
+}
+section article .textWrapper p {
+  text-align: left;
 }
