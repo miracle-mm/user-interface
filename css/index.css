@@ -228,6 +228,18 @@ section article .textWrapper a {
   padding: 10px 40px;
   text-decoration: none;
 }
+section article .textWrapper a:hover {
+  animation-name: colorAnim;
+  animation-duration: 2s;
+}
+@keyframes colorAnim {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: hotpink;
+  }
+}
 section article .textWrapper p {
   text-align: left;
 }
