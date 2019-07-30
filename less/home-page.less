@@ -1,8 +1,13 @@
 section {
     margin: 10px auto;
+    @media only screen and (max-width: 500px) {
+        flex-direction: column;
+        margin: 10px;
+    }
     article {
         display: flex;
         margin-bottom: 20px;
+        align-items: center;
         .imgWrapper {
             flex-grow: 1;
             flex-basis: 25%;
@@ -33,16 +38,26 @@ section {
         .bioWrapper {
             flex-grow: 3;
             flex-basis: 60%;
-            padding: 10px;
+            padding: 20px;
 
         }
         .imgWrapper2 {
             flex-grow: 1;
             flex-basis: 40%;
-            padding: 10px;
+            padding: 20px;
             img {
                 border-radius: 10px;
             }
+        }
+    }
+    .levelOne, .levelThree {
+        @media only screen and (max-width: 500px) {
+            flex-direction: column;
+        }
+    }
+    .levelTwo {
+        @media only screen and (max-width: 500px) {
+            flex-direction: column-reverse;
         }
     }
 }

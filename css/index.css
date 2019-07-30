@@ -134,17 +134,33 @@ table {
 }
 html {
   font-size: 62.5%;
+  font-family: 'Fira Sans', sans-serif;
 }
 h1 {
   font-size: 4rem;
 }
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
 h2 {
   font-size: 2.5rem;
 }
+@media only screen and (max-width: 500px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
 p {
-  line-height: 1.5;
-  font-size: 1.6rem;
+  line-height: 1.6;
+  font-size: 1.8rem;
   padding-bottom: 10px;
+}
+@media only screen and (max-width: 500px) {
+  p {
+    font-size: 1.5rem;
+  }
 }
 img {
   max-width: 100%;
@@ -157,20 +173,30 @@ img {
 }
 header {
   display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
+  justify-content: space-around;
+  padding: 20px 0;
   border-bottom: 2px solid black;
   align-items: center;
+}
+@media only screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
 }
 header nav {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+  }
+}
 header nav a {
   text-decoration: none;
   color: black;
   padding: 20px 15px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 header nav a:hover {
   animation-name: colorAnim;
@@ -183,6 +209,13 @@ header nav a:hover {
   to {
     background-color: hotpink;
   }
+}
+header div {
+  margin: 20px 0;
+}
+header div h2 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 2.5rem;
 }
 footer {
   display: flex;
@@ -197,9 +230,16 @@ footer h3 {
 section {
   margin: 10px auto;
 }
+@media only screen and (max-width: 500px) {
+  section {
+    flex-direction: column;
+    margin: 10px;
+  }
+}
 section article {
   display: flex;
   margin-bottom: 20px;
+  align-items: center;
 }
 section article .imgWrapper {
   flex-grow: 1;
@@ -246,13 +286,24 @@ section article .textWrapper p {
 section article .bioWrapper {
   flex-grow: 3;
   flex-basis: 60%;
-  padding: 10px;
+  padding: 20px;
 }
 section article .imgWrapper2 {
   flex-grow: 1;
   flex-basis: 40%;
-  padding: 10px;
+  padding: 20px;
 }
 section article .imgWrapper2 img {
   border-radius: 10px;
+}
+@media only screen and (max-width: 500px) {
+  section .levelOne,
+  section .levelThree {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 500px) {
+  section .levelTwo {
+    flex-direction: column-reverse;
+  }
 }

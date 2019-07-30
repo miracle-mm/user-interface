@@ -1,24 +1,33 @@
 header {
     display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
+    justify-content: space-around;
+    padding: 20px 0;
     border-bottom: 2px solid black;
     align-items: center;
-    // @media @tablet {
-    //     flex-direction: column;
-    //     align-items: center;
-    // }
+    @media only screen and (max-width: 500px) {
+        flex-direction: column;
+    }
     nav {
         display: flex;
         align-items: center;
+        @media only screen and (max-width: 500px) {
+            flex-direction: column;
+        }
 	    a {
             text-decoration: none;
             color: black;
 		    padding: 20px 15px;
-            font-size: 1.6rem;
+            font-size: 1.8rem;
 	    }
 	    a:hover {
 	    	.hover(white, hotpink);
+        }
+    }
+    div {
+        margin: 20px 0;
+        h2 {
+            font-family: 'Indie Flower', cursive;
+            font-size: 2.5rem;
         }
     }
 }
