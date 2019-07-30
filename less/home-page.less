@@ -39,7 +39,13 @@ section {
             flex-grow: 3;
             flex-basis: 60%;
             padding: 20px;
-
+            a {
+                margin: 0 auto;
+                .button-mixin(black, 2rem, black, 10px, white);
+            }
+            a:hover {
+                .hover(white, hotpink);
+            }
         }
         .imgWrapper2 {
             flex-grow: 1;
