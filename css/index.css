@@ -151,7 +151,7 @@ img {
   height: auto;
 }
 .bodyWrapper {
-  max-width: 800px;
+  max-width: 1100px;
   width: 100%;
   margin: 0 auto;
 }
@@ -246,8 +246,13 @@ section article .textWrapper p {
 section article .bioWrapper {
   flex-grow: 3;
   flex-basis: 60%;
+  padding: 10px;
 }
 section article .imgWrapper2 {
   flex-grow: 1;
   flex-basis: 40%;
+  padding: 10px;
+}
+section article .imgWrapper2 img {
+  border-radius: 10px;
 }
