@@ -199,6 +199,11 @@ header nav a {
   padding: 20px 15px;
   font-size: 1.8rem;
 }
+@media only screen and (max-width: 500px) {
+  header nav a {
+    padding: 10px 15px;
+  }
+}
 header nav a:hover {
   animation-name: colorAnim;
   animation-duration: 2s;
@@ -222,12 +227,12 @@ header div {
 }
 header div h2 {
   font-family: 'Indie Flower', cursive;
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 footer {
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  padding: 20px 0;
   border-top: 2px solid black;
   align-items: center;
 }
