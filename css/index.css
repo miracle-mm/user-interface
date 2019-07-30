@@ -229,6 +229,11 @@ header div h2 {
   font-family: 'Indie Flower', cursive;
   font-size: 4rem;
 }
+@media only screen and (max-width: 300px) {
+  header div h2 {
+    text-align: center;
+  }
+}
 footer {
   display: flex;
   justify-content: center;
@@ -336,5 +341,10 @@ section article .imgWrapper2 img {
 @media only screen and (max-width: 500px) {
   section .levelTwo {
     flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 400px) {
+  section .bio {
+    flex-direction: column;
   }
 }
