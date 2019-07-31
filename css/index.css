@@ -316,7 +316,7 @@ section article .textWrapper a:hover {
   }
 }
 @media only screen and (max-width: 203px) {
-  section article .textWrapper .special-button {
+  section article .textWrapper .specialButton {
     display: flex;
   }
 }
