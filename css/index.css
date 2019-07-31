@@ -1,0 +1,373 @@
+@border Color = black;
+@animation ColorOne = white;
+@animation ColorTwo = hotpink;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Fira Sans', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+h2 {
+  font-size: 2.5rem;
+}
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+p {
+  line-height: 1.6;
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+}
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  p {
+    font-size: 1.3rem;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.bodyWrapper {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  border-bottom: 2px solid black;
+  align-items: center;
+}
+@media only screen and (max-width: 700px) {
+  header {
+    flex-direction: column;
+    margin: 0 20px;
+  }
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+  }
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  padding: 20px 15px;
+  font-size: 1.8rem;
+}
+@media only screen and (max-width: 500px) {
+  header nav a {
+    padding: 10px 15px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin: 8px;
+  }
+}
+header nav a:hover {
+  animation-name: colorAnim;
+  animation-duration: 2s;
+}
+@keyframes colorAnim {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: hotpink;
+  }
+}
+header div {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 500px) {
+  header div {
+    margin: 20px 0;
+  }
+}
+header div h2 {
+  font-family: 'Satisfy', cursive;
+  font-size: 4rem;
+}
+@media only screen and (max-width: 300px) {
+  header div h2 {
+    text-align: center;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  border-top: 2px solid black;
+  align-items: center;
+}
+footer h3 {
+  font-size: 1.6rem;
+}
+section {
+  margin: 10px auto;
+}
+@media only screen and (max-width: 500px) {
+  section {
+    flex-direction: column;
+    margin: 10px;
+  }
+}
+section article {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+section article .imgWrapper {
+  flex-grow: 1;
+  flex-basis: 25%;
+  padding: 10px;
+}
+section article .imgWrapper img {
+  border-radius: 10px;
+}
+section article .textWrapper {
+  flex-grow: 3;
+  flex-basis: 0;
+  padding: 10px;
+  text-align: center;
+}
+section article .textWrapper h1 {
+  text-align: center;
+}
+section article .textWrapper a {
+  margin: 0 auto;
+  color: black;
+  font-size: 2rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px 40px;
+  text-decoration: none;
+}
+section article .textWrapper a:hover {
+  animation-name: colorAnim;
+  animation-duration: 2s;
+}
+@keyframes colorAnim {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: hotpink;
+  }
+}
+@media only screen and (max-width: 203px) {
+  section article .textWrapper .specialButton {
+    display: flex;
+  }
+}
+section article .bioWrapper {
+  flex-grow: 3;
+  flex-basis: 60%;
+  padding: 20px;
+}
+section article .bioWrapper a {
+  margin: 0 auto;
+  color: black;
+  font-size: 2rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px 40px;
+  text-decoration: none;
+}
+section article .bioWrapper a:hover {
+  animation-name: colorAnim;
+  animation-duration: 2s;
+}
+@keyframes colorAnim {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: hotpink;
+  }
+}
+section article .imgWrapper2 {
+  flex-grow: 1;
+  flex-basis: 40%;
+  padding: 20px;
+}
+section article .imgWrapper2 img {
+  border-radius: 10px;
+}
+@media only screen and (max-width: 500px) {
+  section .levelOne,
+  section .levelThree {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 500px) {
+  section .levelTwo {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 500px) {
+  section .bio {
+    flex-direction: column;
+  }
+}

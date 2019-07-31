@@ -1,0 +1,79 @@
+section {
+    margin: 10px auto;
+    @media only screen and (max-width: 500px) {
+        flex-direction: column;
+        margin: 10px;
+    }
+    article {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+        .imgWrapper {
+            flex-grow: 1;
+            flex-basis: 25%;
+            padding: 10px;
+            img {
+                border-radius: 10px;
+            }
+        }
+        .textWrapper {
+            flex-grow: 3;
+            flex-basis: 0;
+            padding: 10px;
+            text-align: center;
+            h1 {
+                text-align: center;
+            }
+            a {
+                margin: 0 auto;
+                .button-mixin(black, 2rem, black, 10px, white);
+            }
+            a:hover {
+                .hover(white, hotpink);
+            }
+            // p {
+            //     text-align: left;
+            // }
+            .specialButton {
+                @media only screen and (max-width: 203px) {
+                    display: flex;
+                } 
+            }
+        }
+        .bioWrapper {
+            flex-grow: 3;
+            flex-basis: 60%;
+            padding: 20px;
+            a {
+                margin: 0 auto;
+                .button-mixin(black, 2rem, black, 10px, white);
+            }
+            a:hover {
+                .hover(white, hotpink);
+            }
+        }
+        .imgWrapper2 {
+            flex-grow: 1;
+            flex-basis: 40%;
+            padding: 20px;
+            img {
+                border-radius: 10px;
+            }
+        }
+    }
+    .levelOne, .levelThree {
+        @media only screen and (max-width: 500px) {
+            flex-direction: column;
+        }
+    }
+    .levelTwo {
+        @media only screen and (max-width: 500px) {
+            flex-direction: column-reverse;
+        }
+    }
+    .bio {
+        @media only screen and (max-width: 500px) {
+            flex-direction: column;
+        }
+    }
+}
