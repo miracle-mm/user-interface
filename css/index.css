@@ -144,12 +144,22 @@ h1 {
     font-size: 3rem;
   }
 }
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
 h2 {
   font-size: 2.5rem;
 }
 @media only screen and (max-width: 600px) {
   h2 {
     font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h2 {
+    font-size: 1.5rem;
   }
 }
 p {
@@ -160,6 +170,11 @@ p {
 @media only screen and (max-width: 600px) {
   p {
     font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  p {
+    font-size: 1.3rem;
   }
 }
 img {
@@ -298,6 +313,11 @@ section article .textWrapper a:hover {
   }
   to {
     background-color: hotpink;
+  }
+}
+@media only screen and (max-width: 203px) {
+  section article .textWrapper .special-button {
+    display: flex;
   }
 }
 section article .bioWrapper {
