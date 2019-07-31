@@ -202,6 +202,9 @@ header nav a {
 @media only screen and (max-width: 500px) {
   header nav a {
     padding: 10px 15px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin: 8px;
   }
 }
 header nav a:hover {
@@ -343,7 +346,7 @@ section article .imgWrapper2 img {
     flex-direction: column-reverse;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   section .bio {
     flex-direction: column;
   }
